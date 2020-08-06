@@ -1,6 +1,9 @@
 .nameSite{
     color: #2EBFA5;
 }
+.nav-link{
+    text-align: center;
+}
 .nav-link:hover{
     color: white;
     background-color: rgba(46, 191, 165, 0.3);
