@@ -8,7 +8,6 @@ document.addEventListener("DOMContentLoaded", function () {
 function loadImgModal(end){
     let srcImg = end.getAttribute("src");
     let altImg = end.getAttribute("alt");
-    // console.log(srcImg);
     let imgModal = document.getElementById("printImgModal");
     document.getElementById("printAlt").innerHTML = altImg;
     imgModal.setAttribute("src", srcImg);
