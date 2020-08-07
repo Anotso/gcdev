@@ -26,16 +26,16 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a href="#home" class="nav-link">Home</a>
+                            <a href="#home" class="nav-link text-light">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#about" class="nav-link">Sobre</a>
+                            <a href="#linkAbout" class="nav-link text-light">Sobre</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#portfolio" class="nav-link">Portfolio</a>
+                            <a href="#portfolio" class="nav-link text-light">Portfolio</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#contact" class="nav-link">Contato</a>
+                            <a href="#contact" class="nav-link text-light">Contato</a>
                         </li>
                     </ul>
                 </div>
@@ -44,27 +44,28 @@
     </header>
     <main>
         <!--    HOME    -->
-        <section id="home">
-            <section class="ofuscar">
-                <div class="container">
-                    <section id="rowHome">
-                        <div class="row">
-                            <div class="col-md-6" id="titleHome">
-                                <h1>GCDev</h1>
-                            </div>
-                            <div class="col-md-6" id="textHome">
-                                <img id="avatar" src="assets/image/Avatar-Maker.png"
-                                    alt="Avatar do desenvolvedor do site">
-                                <h4>Gracilliano Carvalho</h4>
-                                <p>Web Developer</p>
-                            </div>
+        <section class="ofuscar">
+            <img src="assets/image/bghome2.jpg" id="home" alt="background computador com código" />
+            <div class="container-fluid">
+                <section id="rowHome">
+                    <div class="row">
+                        <div class="col-md-6" id="titleHome">
+                            <h1 class="d-none d-md-block">GCDev</h1>
                         </div>
-                    </section>
-                </div>
-            </section>
+                        <div class="col-md-6" id="textHome">
+                            <img id="avatar" src="assets/image/Avatar-Maker.png" alt="Avatar do desenvolvedor do site">
+                            <h4>Gracilliano Carvalho</h4>
+                            <p>Web Developer</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- <section id="home">
+            </section> -->
         </section>
         <!--    SOBRE    -->
-        <section id="about" class="my-3">
+        <div id="linkAbout"></div>
+        <section id="about">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6" id="imgAbout">
@@ -72,36 +73,91 @@
                         <img src="assets/image/tablet.png" alt="Computador">
                         <img src="assets/image/display.png" alt="Computador">
                     </div>
-                    <div class="col-md-6" id="textAbout">
-                        <h5 class="my-2">GCDev</h5>
+                    <div class="col-md-6 textBody">
+                        <h4 class="my-2">GCDev</h4>
                         <p>
-                            Sou um desenvolvedor web que hoje integra o mais novo grupo de devs web, o JT Squad. Busco sempre aplicar os conhecimentos que possuo de áreas que não são correlatas a tecnologia para oferecer uma experiência diferenciada aos projetos em que participo.
+                            Sou um desenvolvedor web que hoje integra o mais novo grupo de devs web, o JT Squad. Busco
+                            sempre aplicar os conhecimentos que possuo de áreas que não são correlatas a tecnologia para
+                            oferecer uma experiência diferenciada aos projetos em que participo.
                         </p>
                         <p>
-                            Tenho como bagagem de conhecimento empírico certificados oficiais de cursos oferecidos pela Cisco, líder mundial em equipamentos de rede, certificado de metodologia Scrum, técnico em informática pelo Instituto Olavo Bilac, com foco em programação e administração, e Senac Rio, voltado para desenvolvimento web.
+                            Tenho como bagagem de conhecimento empírico certificados oficiais de cursos oferecidos pela
+                            Cisco, líder mundial em equipamentos de rede, certificado de metodologia Scrum, técnico em
+                            informática pelo Instituto Olavo Bilac, com foco em programação e administração, e Senac
+                            Rio, voltado para desenvolvimento web.
                         </p>
                     </div>
                 </div>
             </div>
         </section>
         <!--    PORTIFOLIO    -->
-        <section id="portfolio">
+        <section id="portfolio" class="my-5">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <!--    DADOS SOBRE O SISTEMA DO IVAN-->
-                    </div>
-                    <div class="col-md-6">
-                        <!--    FOTOS SOBRE O SISTEMA DO IVAN-->
+                <hr />
+                <div class="row my-5 text-center">
+                    <div class="col-12">
+                        <h4>Portfolio</h4>
                     </div>
                 </div>
-                <hr/>
-                <div class="row">
-                    <div class="col-md-6">
-                        <!--    FOTOS SOBRE O SITE DA JT SQUAD-->
+                <div class="row my-5">
+                    <div class="col-md-6  order-md-2">
+                        <!--    FOTOS SOBRE O SISTEMA DO IVAN-->
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img src="assets/portfolio/01_goblin.png" class="img-fluid imgStyle"
+                                    alt="Esconderijo do goblin - tela de login" onclick="loadImgModal(this)"
+                                    data-toggle="modal" data-target="#modalPrintImg">
+                            </div>
+                            <div class="col-md-6">
+                                <img src="assets/portfolio/02_goblin.png" class="img-fluid imgStyle"
+                                    alt="Esconderijo do goblin - página principal" onclick="loadImgModal(this)"
+                                    data-toggle="modal" data-target="#modalPrintImg">
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 order-md-1 textBody">
+                        <!--    DADOS SOBRE O SISTEMA DO IVAN-->
+                        <h5>Esconderijo do Goblin</h5>
+                        <p>
+                            Sistema criado sob demanda para manter o controle do estoque e as assinaturas dos serviços
+                            prestados pela loja. A aplicação foi desenvolvida em PHP e roda em ambiente controlado, a
+                            vantagem é que dessa forma as informações importantes ficam disponíveis para as pessoas que
+                            realmente importa. O bom de se trabalhar numa rede fechada é que somente os funcionários e
+                            os donos podem visualizar os dados, mas infelizmente não podem ser acessados normalmente por
+                            um navegador que esteja fora do estabelecimento comercial. Contudo, uma conexão VPN poderia
+                            resolver isso, ou atualizando a versão atual para a Web.
+                        </p>
+                    </div>
+                </div>
+                <div class="row my-5">
+                    <div class="col-md-6 order-md-1">
+                        <!--    FOTOS SOBRE O SITE DA JT SQUAD-->
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img src="assets/portfolio/01_jt.png" class="img-fluid imgStyle"
+                                    alt="Site JT Squad - página principal" onclick="loadImgModal(this)"
+                                    data-toggle="modal" data-target="#modalPrintImg">
+                            </div>
+                            <div class="col-md-6">
+                                <img src="assets/portfolio/02_jt.png" class="img-fluid imgStyle"
+                                    alt="Site JT Squad - página sobre" onclick="loadImgModal(this)"
+                                    data-toggle="modal" data-target="#modalPrintImg">
+                            </div>
+                        </div>
+                        FOTO JT
+                    </div>
+                    <div class="col-md-6 order-md-2 textBody">
                         <!--    DADOS SOBRE O SITE DA JT SQUAD-->
+                        <h5>JT Squad</h5>
+                        <p>
+                            Principal site do grupo JT Squad. Ele foi desenvolvido pela equipe e cada um integrante foi
+                            importante para pôr o projeto no ar. Isto nos ajudou a definir e acertar o papel de cada um
+                            e como poderíamos atuar no mercado para oferecer o que há de melhor para os nossos clientes.
+                        </p>
+                        <p>
+                            Estamos começando está nova etapa em 2020, mas parece que trabalhamos juntos a muito tempo e
+                            a tendência é nos aprimorar a cada novo projeto e desafio.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -119,6 +175,23 @@
             </div>
         </div>
     </footer>
+    <div class="modal fade" id="modalPrintImg" tabindex="-1" role="dialog"
+        aria-labelledby="Modal - load da foto do portfolio" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 id="printAlt"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="" id="printImgModal" class="img-fluid">
+                </div>
+            </div>
+
+        </div>
+    </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
