@@ -23,7 +23,7 @@ img#home{
     -o-filter: blur(10px);
     -ms-filter: blur(10px);
     height: 50rem;
-    width: auto;
+    width: 100%;
 }
 .ofuscar{
     background-color: rgba(0, 0, 0, 0.7);
