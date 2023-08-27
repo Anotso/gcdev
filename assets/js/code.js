@@ -1,10 +1,15 @@
 document.addEventListener("DOMContentLoaded", function () {
-    function printYear(){
-        let currentYear = new Date();
-        document.getElementById("year").innerHTML = currentYear.getFullYear();
-    }
-    printYear();
+    let currentYear = new Date();
+    document.getElementById("year").innerHTML = currentYear.getFullYear();
 });
+
+const imgModal = document.getElementsByClassName('imgStyle')
+for (const item of imgModal) {
+    item.addEventListener("click", function (e) {
+        loadImgModal(e.target)
+    });
+}
+
 function loadImgModal(end){
     let srcImg = end.getAttribute("src");
     let altImg = end.getAttribute("alt");
